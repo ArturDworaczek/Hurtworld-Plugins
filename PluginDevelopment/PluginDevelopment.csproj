@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C6F906D-92B6-4FD8-B248-4557151FE935}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PluginDevelopment</RootNamespace>
+    <AssemblyName>PluginDevelopment</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="To Finish\Kits.cs" />
+    <Compile Include="Working\Announcements.cs" />
+    <Compile Include="Working\BetterChat.cs" />
+    <Compile Include="Working\BetterDeathNotifications.cs" />
+    <Compile Include="To Finish\DailyTasks.cs" />
+    <Compile Include="Working\Groups.cs" />
+    <Compile Include="Working\IDSystem.cs" />
+    <Compile Include="To Finish\ItemDrop.cs" />
+    <Compile Include="Working\KillCounter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="To Finish\LevelSystem.cs" />
+    <Compile Include="Working\RaidBlock.cs" />
+    <Compile Include="Working\Teleportation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AmplifyOcclusion">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\AmplifyOcclusion.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyAntiCheat.Client">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\EasyAntiCheat.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyAntiCheat.Server">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\EasyAntiCheat.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\I18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.ZLib">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Ionic.ZLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MonitorComponents">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\MonitorComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Tds">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Mono.Data.Tds.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NSpeex">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\NSpeex.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Core">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Oxide.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.CSharp">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Oxide.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Hurtworld">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Oxide.Hurtworld.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.MySql">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Oxide.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.References">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Oxide.References.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.SQLite">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Oxide.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Unity">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Oxide.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows_Lib">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\Rewired_Windows_Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\System.Configuration.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="uLink">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\uLink.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashLog">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\UnityEngine.CrashLog.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Steam\steamapps\common\Hurtworld Dedicated Server\Hurtworld_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>
